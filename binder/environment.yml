@@ -23,6 +23,11 @@ dependencies:
   - ipywidgets
   - graphviz
   - nodejs
+  - satpy
+  - imageio
+  - imageio-feedstock
+  - rasterio
+  - geoviews
   - pip:
     - kubernetes
     - graphviz
