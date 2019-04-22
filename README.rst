@@ -33,41 +33,11 @@ Local Installation
 Before attending an instructor lead version of this tutorial where you will be
 executing the notebooks on your local machine (not in the cloud) the necessary
 software should be installed and test data downloaded in to the correct
-locations. Follow the instructions below to prepare your system.
+locations. Follow the `INSTALL <./INSTALL.md>`_ instructions for how to create
+the proper conda environment. Once completed and your new environment is
+activated, verified, and test data downloaded you can open these lessons by
+starting Jupyter Notebook and navigating to the `notebooks/` directory.
 
-1. Install the Anaconda (Miniconda is also fine) software distribution by
-following the links and instructions on the
-`Anaconda website <https://www.anaconda.com/distribution/>`_. If this has
-already been installed there is no need to reinstall.
+.. code-block:: bash
 
-2. Add the ``conda-forge`` conda channel to your global configuration:
-
-.. code-block:: console
-
-    conda config --add channels conda-forge
-
-3. Update the ``conda`` package manager:
-
-.. code-block:: console
-
-    conda update -y -n base conda
-
-3. Create a conda sub-environment specifically for this repository and other
-future Satpy work:
-
-.. code-block:: console
-
-    conda create -y -n satpy python=3.7 satpy rasterio imageio imageio-ffmpeg geoviews
-
-4. Active the new environment:
-
-.. code-block:: console
-
-    conda activate satpy
-
-.. note::
-
-    If using older versions of conda, you may need to run
-    ``source activate satpy`` (``activate satpy`` on Windows).
-
-5. Download example data...TODO.
+    jupyter notebook
