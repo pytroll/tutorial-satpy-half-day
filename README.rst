@@ -19,6 +19,13 @@ Try these notebooks on pangeo.binder.io_ : |Binder|
 .. |Binder| image:: http://binder.pangeo.io/badge.svg
     :target: http://binder.pangeo.io/v2/gh/pytroll/tutorial-satpy-half-day/master
 
+Prerequisites
+-------------
+
+This tutorial requires only basic python and numpy experience. Any additional
+experience with xarray or dask is not required but will make the lessons
+easier to understand and more effective.
+
 Lessons
 -------
 
@@ -41,3 +48,6 @@ starting Jupyter Notebook and navigating to the `notebooks/` directory.
 .. code-block:: bash
 
     jupyter notebook
+
+Run individual code cells in the notebook by typing "Shift+Enter" for each
+cell.
