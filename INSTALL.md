@@ -79,8 +79,13 @@ locations. Follow the instructions below to prepare your system.
 
    You should see `SUCCESS` as the last line of output.
    
-10. Start the Jupyter Notebook server from the activate python environment
-    so we can run the tutorial's notebooks.
+10. Installation is now complete. If you are attending an instructor lead
+    tutorial then you can wait for your next steps from the instructor. If
+    you are following the tutorial on your own then continue on to the next
+    step.
+   
+11. Start the Jupyter Notebook server from the activated python environment
+    so you can run the tutorial's notebooks.
 
     ```shell
     jupyter notebook
@@ -88,4 +93,10 @@ locations. Follow the instructions below to prepare your system.
     
     Your web browser should open to the local notebook server. Navigate
     to the tutorial notebooks by clicking on the "notebooks" folder in the
-    browser.
+    browser and click on the "01_introduction.ipynb" file. As you complete
+    notebooks, you can close them and go back to this browser tab/window to
+    access the next notebook in the series.
+    
+    You may want to click the checkbox next to completed notebooks and choose
+    "Shutdown" near the top of the page to free any resources used by that
+    notebook.
