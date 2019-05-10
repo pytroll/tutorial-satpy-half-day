@@ -85,3 +85,7 @@ locations. Follow the instructions below to prepare your system.
     ```shell
     jupyter notebook
     ```
+    
+    Your web browser should open to the local notebook server. Navigate
+    to the tutorial notebooks by clicking on the "notebooks" folder in the
+    browser.
