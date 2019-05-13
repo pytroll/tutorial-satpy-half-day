@@ -25,7 +25,7 @@ dependencies:
   - nodejs
   - satpy
   - imageio
-  - imageio-feedstock
+  - imageio-ffmpeg
   - rasterio
   - geoviews
   - pip:
