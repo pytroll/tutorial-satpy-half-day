@@ -45,6 +45,15 @@ locations. Follow the instructions below to prepare your system.
    ```shell
    conda update -y -n base conda
    ```
+   
+   Verify that you have conda version greater than or equal to 4.6.14:
+   
+   ```shell
+   conda --version
+   ```
+   
+   NOTE: If you have run the above update command and it still didn't update
+         to the new version. Try `conda install -y -n base "conda>=4.6.14"`.
 
 6. Create a conda sub-environment specifically for this tutorial and other
    future Satpy work:
