@@ -39,12 +39,33 @@ def check_satpy_features():
 
 
 def check_data_download():
-    abi_exists = os.path.isdir(os.path.join(TUTORIAL_ROOT, 'data', 'abi_l1b'))
-    viirs_exists = os.path.isdir(os.path.join(TUTORIAL_ROOT, 'data', 'viirs_sdr'))
-    all_ok = all([abi_exists, viirs_exists])
-    if not all_ok:
-        print("FAIL: Missing test data files.")
-    return all([abi_exists, viirs_exists])
+    print("Checking data directories...\n")
+
+    # base_dirs
+    abi_dir = os.path.join(TUTORIAL_ROOT, 'data', 'abi_l1b')
+    viirs_dir = os.path.join(TUTORIAL_ROOT, 'data', 'viirs_sdr')
+
+    # data case dirs
+    conus_dir = os.path.join(abi_dir, '20180511_texas_fire_abi_l1b_conus')
+    meso_dir = os.path.join(abi_dir, '20180511_texas_fire_abi_l1b_meso')
+    viirs_dir = os.path.join(viirs_dir, '20180511_texas_fire_viirs_sdr')
+    all_dirs_exist = all(os.path.isdir(x) for x in [conus_dir, meso_dir, viirs_dir])
+    if not all_dirs_exist:
+        print("FAIL: Missing one or more data directories")
+        return False
+
+    # number of files
+    if len(os.listdir(conus_dir)) != 16:
+        print("FAIL: Expected 16 files in {}".format(conus_dir))
+        return False
+    if len(os.listdir(meso_dir)) != 1440:
+        print("FAIL: Expected 1440 files in {}".format(meso_dir))
+        return False
+    if len(os.listdir(viirs_dir)) != 21:
+        print("FAIL: Expected 21 files in {}".format(viirs_dir))
+        return False
+
+    return True
 
 
 def main():

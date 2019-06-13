@@ -56,10 +56,10 @@ locations. Follow the instructions below to prepare your system.
          to the new version. Try `conda install -y -n base "conda>=4.6.14"`.
 
 6. Create a conda sub-environment specifically for this tutorial and other
-   future Satpy work:
+   future Satpy work named `satpy`:
 
    ```shell
-   conda create -y -n satpy python=3.7 satpy rasterio imageio imageio-ffmpeg cartopy geoviews notebook
+   conda create -y -n satpy python=3.7 satpy rasterio imageio imageio-ffmpeg cartopy geoviews notebook requests tqdm
    ```
 
 7. Active the new environment:
@@ -71,7 +71,7 @@ locations. Follow the instructions below to prepare your system.
    **Note**: If using older versions of conda, you may need to run
    ``source activate satpy`` (``activate satpy`` on Windows).
 
-8. Download example data:
+8. Download example data and other necessary files (~2.5GB):
 
    ```shell
    python download_data.py
@@ -89,9 +89,9 @@ locations. Follow the instructions below to prepare your system.
    You should see `SUCCESS` as the last line of output.
    
 10. Installation is now complete. If you are attending an instructor lead
-    tutorial then you can wait for your next steps from the instructor. If
-    you are following the tutorial on your own then continue on to the next
-    step.
+    tutorial then you can wait for the day of the tutorial for further
+    instructions. If you are following the tutorial on
+    your own then continue on to the next step.
    
 11. Start the Jupyter Notebook server from the activated python environment
     so you can run the tutorial's notebooks.
