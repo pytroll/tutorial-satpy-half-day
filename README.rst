@@ -26,6 +26,22 @@ This tutorial requires only basic python and numpy experience. Any additional
 experience with xarray or dask is not required but will make the lessons
 easier to understand and more effective.
 
+System Requirements
+-------------------
+
+It is recommended that anyone working through this tutorial have a minimum of
+8GB of RAM memory and a CPU with at least 4 logical cores. A more powerful
+system is recommended for more responsive plotting and viewing of data.
+
+Issues
+------
+
+Any difficulties installing or following these lessons should be filed as bugs
+on the
+[tutorial GitHub repository](https://github.com/pytroll/tutorial-satpy-half-day/issues).
+Create a new issue by clicking the "New issue" button near the top right of
+the linked page.
+
 Lessons
 -------
 

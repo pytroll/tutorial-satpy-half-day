@@ -5,6 +5,15 @@ executing the notebooks on your local machine (not in the cloud) the necessary
 software should be installed and test data downloaded in to the correct
 locations. Follow the instructions below to prepare your system.
 
+It is recommended that anyone working through this tutorial have a minimum of
+8GB of RAM memory and a CPU with at least 4 logical cores. A more powerful
+system is recommended for more responsive plotting and viewing of data.
+
+Any installation issues should be filed as a bug on the
+[tutorial GitHub repository](https://github.com/pytroll/tutorial-satpy-half-day/issues).
+Create a new issue by clicking the "New issue" button near the top right of
+the linked page.
+
 1. Download the contents of the tutorial repository. You can either clone
    the git repository using the `git` command in a terminal window:
    
