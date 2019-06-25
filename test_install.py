@@ -49,9 +49,14 @@ def check_data_download():
     conus_dir = os.path.join(abi_dir, '20180511_texas_fire_abi_l1b_conus')
     meso_dir = os.path.join(abi_dir, '20180511_texas_fire_abi_l1b_meso')
     viirs_dir = os.path.join(viirs_dir, '20180511_texas_fire_viirs_sdr')
-    all_dirs_exist = all(os.path.isdir(x) for x in [conus_dir, meso_dir, viirs_dir])
-    if not all_dirs_exist:
-        print("FAIL: Missing one or more data directories")
+    if not os.path.isdir(conus_dir):
+        print("FAIL: Missing ABI L1B CONUS data: {}".format(conus_dir))
+        return False
+    if not os.path.isdir(meso_dir):
+        print("FAIL: Missing ABI L1B Mesoscale data: {}".format(meso_dir))
+        return False
+    if not os.path.isdir(viirs_dir):
+        print("FAIL: Missing VIIRS SDR data: {}".format(viirs_dir))
         return False
 
     # number of files

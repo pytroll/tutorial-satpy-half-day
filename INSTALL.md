@@ -38,7 +38,7 @@ the linked page.
    the root tutorial directory (where the `INSTALL.md` file is):
    
    ```shell
-   cd /path/to/tutorial
+   cd /path/to/tutorial-satpy-half-day
    ```
     
    You will use the terminal to run the following commands.

@@ -39,14 +39,12 @@ def _download_data_zip(url, output_filename):
 
 
 def _unzip(filename, output_dir):
-    if os.path.isdir(output_dir):
-        print("Extracted data directory already exists, won't recreate: {}".format(output_dir))
-        return True
-
+    print("Extracting {}".format(filename))
     try:
         with ZipFile(filename, 'r') as zip_obj:
             zip_obj.extractall(output_dir)
     except (IOError, OSError):
+        print("FAIL: Could not extract {}".format(filename))
         return False
     return True
 
