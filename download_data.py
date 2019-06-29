@@ -7,6 +7,8 @@ import requests
 from zipfile import ZipFile
 from tqdm import tqdm
 
+TUTORIAL_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 
 def download_pyspectral_luts():
     print("Downloading lookup tables used by pyspectral...")
@@ -57,6 +59,8 @@ def _download_and_unzip(url, output_dir):
 
 
 def download_test_data():
+    os.chdir(TUTORIAL_ROOT)
+
     ret = _download_and_unzip(
         'https://bin.ssec.wisc.edu/pub/davidh/20180511_texas_fire_abi_l1b_conus.zip',
         os.path.join('data', 'abi_l1b')
