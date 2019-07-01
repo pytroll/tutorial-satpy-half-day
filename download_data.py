@@ -59,6 +59,7 @@ def _download_and_unzip(url, output_dir):
 
 
 def download_test_data():
+    cwd = os.getcwd()
     os.chdir(TUTORIAL_ROOT)
 
     ret = _download_and_unzip(
@@ -73,6 +74,7 @@ def download_test_data():
         'https://bin.ssec.wisc.edu/pub/davidh/20180511_texas_fire_viirs_sdr.zip',
         os.path.join('data', 'viirs_sdr')
     )
+    os.chdir(cwd)
     return ret
 
 
