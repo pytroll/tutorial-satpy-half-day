@@ -2,7 +2,7 @@
 
 Before attending an instructor lead version of this tutorial where you will be
 executing the notebooks on your local machine (not in the cloud) the necessary
-software should be installed and test data downloaded in to the correct
+software should be installed and test data downloaded into the correct
 locations. Follow the instructions below to prepare your system.
 
 It is recommended that anyone working through this tutorial have a minimum of
@@ -97,7 +97,7 @@ the linked page.
 
    You should see `SUCCESS` as the last line of output.
    
-10. Installation is now complete. If you are attending an instructor lead
+10. Installation is now complete. If you are attending an instructor led
     tutorial then you can wait for the day of the tutorial for further
     instructions. If you are following the tutorial on
     your own then continue on to the next step.

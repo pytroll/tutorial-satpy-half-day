@@ -53,9 +53,9 @@ for details on the lessons as a whole and to start the tutorial.
 Local Installation
 ------------------
 
-Before attending an instructor lead version of this tutorial where you will be
+Before attending an instructor led version of this tutorial where you will be
 executing the notebooks on your local machine (not in the cloud) the necessary
-software should be installed and test data downloaded in to the correct
+software should be installed and test data downloaded into the correct
 locations. Follow the `INSTALL <./INSTALL.md>`_ instructions for how to create
 the proper conda environment. Once completed and your new environment is
 activated, verified, and test data downloaded you can open these lessons by
