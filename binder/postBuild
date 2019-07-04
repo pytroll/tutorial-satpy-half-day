@@ -11,5 +11,5 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager \
 find notebooks -type f -name "*.ipynb" -print0 | xargs -0 sed -i 's/%matplotlib notebook/%matplotlib widget/g'
 
 python download_data.py
-
+echo $?
 #EOF
