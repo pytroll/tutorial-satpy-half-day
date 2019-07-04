@@ -98,7 +98,7 @@ def main():
         print("SUCCESS")
     else:
         print("FAIL")
-    return ret
+    return int(not ret)
 
 
 if __name__ == "__main__":
