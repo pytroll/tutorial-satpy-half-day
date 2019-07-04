@@ -11,6 +11,7 @@ dependencies:
   - intake::intake-xarray
   - zarr
   - matplotlib
+  - ipympl
   - numcodecs
   - python-blosc
   - lz4
