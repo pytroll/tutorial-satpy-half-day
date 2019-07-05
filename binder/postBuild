@@ -1,11 +1,16 @@
 #!/bin/bash
+
+MPLBACKEND=Agg python -c "import matplotlib.pyplot"  # Build font cache.
+
 jupyter serverextension enable --py nbserverproxy --sys-prefix
-jupyter labextension install @jupyter-widgets/jupyterlab-manager \
-                             @jupyterlab/hub-extension@0.12 \
-                             @pyviz/jupyterlab_pyviz \
-                             jupyter-leaflet \
-                             jupyter-matplotlib \
-                             dask-labextension
+jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
+jupyter labextension install --no-build @jupyterlab/hub-extension@0.12
+jupyter labextension install --no-build @pyviz/jupyterlab_pyviz
+jupyter labextension install --no-build jupyter-leaflet
+jupyter labextension install --no-build jupyter-matplotlib
+jupyter labextension install --no-build dask-labextension
+# We deferred building above (--no-build) to do it just once here.
+jupyter lab build
 
 # Replace all `%matplotlib notebook` usage with `%matplotlib widget`
 find notebooks -type f -name "*.ipynb" -print0 | xargs -0 sed -i 's/%matplotlib notebook/%matplotlib widget/g'

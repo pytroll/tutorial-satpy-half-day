@@ -20,7 +20,7 @@ kubernetes:
           - dask-worker
           - --nthreads
           - '2'
-          - --no-bokeh
+          - --no-dashboard
           - --memory-limit
           - 7GB
           - --death-timeout
