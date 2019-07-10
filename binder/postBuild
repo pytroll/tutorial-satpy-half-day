@@ -10,6 +10,4 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager \
 # Replace all `%matplotlib notebook` usage with `%matplotlib widget`
 find notebooks -type f -name "*.ipynb" -print0 | xargs -0 sed -i 's/%matplotlib notebook/%matplotlib widget/g'
 
-python download_data.py
-
 #EOF

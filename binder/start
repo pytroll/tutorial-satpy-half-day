@@ -9,4 +9,6 @@ sed -i -e "s|WORKSPACE_ID|/user/${JUPYTERHUB_USER}/lab|g" binder/jupyterlab-work
 jupyter lab workspaces import binder/jupyterlab-workspace.json \
   --NotebookApp.base_url=user/${JUPYTERHUB_USER}
 
+python download_data.py
+
 exec "$@"
