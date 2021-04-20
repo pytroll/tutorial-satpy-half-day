@@ -11,7 +11,7 @@ import os
 from contextlib import redirect_stdout
 
 try:
-    from satpy.config import check_satpy
+    from satpy.utils import check_satpy
 except ImportError:
     print("FAIL: Satpy is not importable")
     raise
