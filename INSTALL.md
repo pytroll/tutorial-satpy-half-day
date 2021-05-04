@@ -27,7 +27,7 @@ the linked page.
    Or you can get a copy of the repository by downloading the
    `.zip` file at the URL below and unzipping it on your system:
    
-   https://github.com/pytroll/tutorial-satpy-half-day/archive/master.zip
+   https://github.com/pytroll/tutorial-satpy-half-day/archive/main.zip
 
 2. Install the Anaconda (Miniconda is also fine) software distribution by
    following the links and instructions on the

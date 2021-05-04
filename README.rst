@@ -17,7 +17,7 @@ Try these notebooks on pangeo.binder.io_ : |Binder|
 .. _pangeo.binder.io: http://binder.pangeo.io/
 
 .. |Binder| image:: http://binder.pangeo.io/badge.svg
-    :target: http://binder.pangeo.io/v2/gh/pytroll/tutorial-satpy-half-day/master
+    :target: http://binder.pangeo.io/v2/gh/pytroll/tutorial-satpy-half-day/main
 
 Prerequisites
 -------------
@@ -47,7 +47,7 @@ Lessons
 
 All lesson notebooks are in the `notebooks/` directory. See the first
 notebook,
-`01_introduction.ipynb <https://github.com/pytroll/tutorial-satpy-half-day/blob/master/notebooks/01_introduction.ipynb>`_,
+`01_introduction.ipynb <https://github.com/pytroll/tutorial-satpy-half-day/blob/main/notebooks/01_introduction.ipynb>`_,
 for details on the lessons as a whole and to start the tutorial.
 
 Local Installation
