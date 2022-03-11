@@ -29,6 +29,7 @@ dependencies:
   - imageio
   - imageio-ffmpeg
   - rasterio
+  - requests
   - geoviews
   - pip:
     - kubernetes
